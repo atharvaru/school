@@ -81,7 +81,7 @@ int energy = 5;
         std::cin >> action;
 
         if (action == 1) {
-            // Search for supplies
+
             if (energy >= 1) {
                 energy -= 1; // Cost 1 energy
                 supplies += 1; // Gain 1 supply
@@ -91,14 +91,14 @@ int energy = 5;
             }
         } else if (action == 2) {
             // Rest
-            energy += 2; // Restore 2 energy
+            energy += 2; 
             std::cout << "You rested and restored 2 energy" << std::endl;
         } else {
             std::cout << "Invalid action. Please choose 1 or 2." << std::endl;
         }
     }
 
-    // End conditions
+    // end conditions
     if (supplies >= 10) {
         std::cout << "You've gathered enough supplies to escape" << std::endl;
     } else {
