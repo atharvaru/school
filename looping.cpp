@@ -7,68 +7,20 @@
 #include <string>
 
 int main() {
-    // variables to store quotes for each day of the week
-    std::string mondayQuote;
-    std::string tuesdayQuote;
-    std::string wednesdayQuote;
-    std::string thursdayQuote;
-    std::string fridayQuote;
-    std::string saturdayQuote;
-    std::string sundayQuote;
+   const std::string daysOfWeek[7] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+    std::string quotes[7];
 
-    // loop to prompt the user for each day's quote
+    // Loop to prompt the user for each day's quote
     for (int i = 0; i < 7; i++) {
-        std::string day;
-
-        // determine the day of the week and prompt for the corresponding quote
-        switch (i) {
-            case 0:
-                day = "Monday";
-                std::cout << "Enter a motivational quote for " << day << ": ";
-                std::getline(std::cin, mondayQuote);
-                break;
-            case 1:
-                day = "Tuesday";
-                std::cout << "Enter a motivational quote for " << day << ": ";
-                std::getline(std::cin, tuesdayQuote);
-                break;
-            case 2:
-                day = "Wednesday";
-                std::cout << "Enter a motivational quote for " << day << ": ";
-                std::getline(std::cin, wednesdayQuote);
-                break;
-            case 3:
-                day = "Thursday";
-                std::cout << "Enter a motivational quote for " << day << ": ";
-                std::getline(std::cin, thursdayQuote);
-                break;
-            case 4:
-                day = "Friday";
-                std::cout << "Enter a motivational quote for " << day << ": ";
-                std::getline(std::cin, fridayQuote);
-                break;
-            case 5:
-                day = "Saturday";
-                std::cout << "Enter a motivational quote for " << day << ": ";
-                std::getline(std::cin, saturdayQuote);
-                break;
-            case 6:
-                day = "Sunday";
-                std::cout << "Enter a motivational quote for " << day << ": ";
-                std::getline(std::cin, sundayQuote);
-                break;
-        }
+        std::cout << "Enter a motivational quote for " << daysOfWeek[i] << ": ";
+        std::getline(std::cin, quotes[i]);
     }
 
-    // display all 
+    // Display all quotes
     std::cout << "\nYour Motivational Quotes for the Week:\n";
-    std::cout << "Monday: " << mondayQuote << std::endl;
-    std::cout << "Tuesday: " << tuesdayQuote << std::endl;
-    std::cout << "Wednesday: " << wednesdayQuote << std::endl;
-    std::cout << "Thursday: " << thursdayQuote << std::endl;
-    std::cout << "Friday: " << fridayQuote << std::endl;
-    std::cout << "Saturday: " << saturdayQuote << std::endl;
-    std::cout << "Sunday: " << sundayQuote << std::endl;
+    for (int i = 0; i < 7; i++) {
+        std::cout << daysOfWeek[i] << ": " << quotes[i] << std::endl;
+    }
 
 // Exercise 2
 int energy = 5;
