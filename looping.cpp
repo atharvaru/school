@@ -10,7 +10,7 @@ int main() {
    const std::string daysOfWeek[7] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
     std::string quotes[7];
 
-    // Loop to prompt the user for each day's quote
+    // Loop to
     for (int i = 0; i < 7; i++) {
         std::cout << "Enter a motivational quote for " << daysOfWeek[i] << ": ";
         std::getline(std::cin, quotes[i]);
@@ -35,8 +35,8 @@ int energy = 5;
         if (action == 1) {
 
             if (energy >= 1) {
-                energy -= 1; // Cost 1 energy
-                supplies += 1; // Gain 1 supply
+                energy -= 1; // cost 1 energy
+                supplies += 1; // gain 1 supply
                 std::cout << "You searched for supplies and found 1 supply" << std::endl;
             } else {
                 std::cout << "Not enough energy to search for supplies" << std::endl;
@@ -59,7 +59,7 @@ int energy = 5;
 
 // exersise 3
 
-     int code = 783; // Example code
+     int code = 783; 
 
     int guess;
     char tryAgain;
