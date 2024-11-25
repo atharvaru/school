@@ -4,7 +4,8 @@
 // closing function
 #include <iostream>
 using namespace std;
-
+// funvtion dec
+// gloable variable
 string shopName(); 
 double calculatePizzaPrice(char sizeOfPizza, int numToppings);
 string closing();
@@ -27,7 +28,7 @@ int main() {
 
     double totalPrice = calculatePizzaPrice(sizeOfPizza, numToppings);
 
-    
+    // bill
     if (totalPrice > 0) {
         cout<< "Size of Pizza: " << sizeOfPizza << endl;
         cout << "Number of Toppings: " << numToppings << endl;
@@ -39,14 +40,14 @@ int main() {
     cout<< hi << endl;
     return 0;
 }
-
+// functions
 string shopName() {
     return "Uncs Puzza";
 }
 
 double calculatePizzaPrice(char sizeOfPizza, int numToppings) {
     double totalPrice = 0.0;
-
+// calculations
     if (sizeOfPizza == 's' || sizeOfPizza == 'S') {
         totalPrice = priceOfSmall + (numToppings * pricePerTopping);
     } 
