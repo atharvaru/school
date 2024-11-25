@@ -17,16 +17,18 @@ int main()
 {
     // first program
     countdown();
-  
+
+    //second program
     cout << "Whats your name" << endl;
     cin >> name;
     cout << "Enter a Number" << endl;
     cin >> times;
     customGreet(name,times);
+    //3rd program
     int number = getFavoriteNumber();
-
     cout << "Your favorite number is: " << number << endl;
 
+    // 4rd
     cout << "Enter threes numeros" << endl;
     cin >> a >> b >> c;
 
