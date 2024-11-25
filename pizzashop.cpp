@@ -1,3 +1,7 @@
+// Atharva
+// Pizza Shop
+// 11/25/24
+// closing function
 #include <iostream>
 using namespace std;
 
@@ -25,6 +29,8 @@ int main() {
 
     
     if (totalPrice > 0) {
+        cout<< "Size of Pizza: " << sizeOfPizza << endl;
+        cout << "Number of Toppings: " << numToppings << endl;
         cout << "Your total price is: $" << totalPrice << endl;
     }
     
