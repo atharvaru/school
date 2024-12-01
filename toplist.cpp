@@ -18,7 +18,7 @@ int main()
     
     
     for (int i = 0; i < listLength; i++) {
-        cout << "Enter your youtuber here: " << endl; /
+        cout << "Enter your youtuber here: " << endl; 
         getline(cin, youtubers[i]); 
     }
     
