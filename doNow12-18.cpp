@@ -25,6 +25,6 @@ int main() {
     cout << "Random number: " << randomNumber << 
        endl;
     return 0;
-
+// We need time for random numbers because we need to seed the random number so its truely random and the rand() function follows a pattern.
    
 }
