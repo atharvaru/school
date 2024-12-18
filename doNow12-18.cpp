@@ -22,7 +22,8 @@ int main() {
 
     int randomNumber = rand() % 10 + 1;
 
-    std::cout << "Random number: " << randomNumber << std::endl;
+    cout << "Random number: " << randomNumber << 
+       endl;
     return 0;
 
    
