@@ -20,7 +20,7 @@ void displayGreeting(vector<string>names) {
 }
 
 int main(){
-    // number `
+    // number 1
     vector<int> numbers = {5,12,7,10,8,9,15,7,4,1};
     // print number 3
     cout << numbers.at(2) << '\n' << endl;
