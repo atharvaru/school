@@ -1,7 +1,7 @@
 //Atharva
 // 1/27/25
 //  vector lab 2
-// have user insert new product
+// have user replace a product
 #include<iostream>
 #include<vector>
 #include<string>
