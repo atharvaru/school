@@ -8,7 +8,12 @@
 using namespace std;
 
 int main(){
+
     vector<string> products = {"iPhone", "AirPods", "MacBook","iPad", "Apple Watch" };
+
+    for(auto itr = products.begin(); itr != products.end(); itr++){
+        cout << *itr << endl;
+    }
 
     cout << "Enter a new product: ";
     string newProduct;
@@ -32,13 +37,15 @@ int main(){
     for(auto itr = products.begin(); itr != products.end(); itr++){
         cout << *itr << endl;
     }
+    // extra
 
     cout<<"Enter the position you want to replace a product: " << endl;
     int replacePosition;
     cin >> replacePosition;
     cout << "Enter the new product: ";
     string newProduct2;
-     getline(cin, newProduct2);
+    cin.ignore(); 
+    getline(cin, newProduct2);
     products[replacePosition] = newProduct2;
     
      for(auto itr = products.begin(); itr != products.end(); itr++){
