@@ -4,11 +4,7 @@
 // extra extra subject
 #include <iostream>
 #include <iomanip>
-
-
 using namespace std;
-
-
 int main() {
     // number 1
     int rows, columns;
@@ -89,10 +85,8 @@ int main() {
         cout << "Sum of column " << j << ": " << colSum << ", Average: " << static_cast<double>(colSum) / n << endl;
     }
     // number 3
-]
-    int numStudents;
-    int numSubjects = 4; 
 
+    int numStudents;
     cout << "Enter the number of students (1-10): ";
     cin >> numStudents;
 
@@ -101,12 +95,12 @@ int main() {
         return 1;
     }
 
-    int scores[numStudents][numSubjects];
+    int scores[numStudents][4];
     srand(time(0));
 
     
     for (int i = 0; i < numStudents; ++i) {
-        for (int j = 0; j < numSubjects; ++j) {
+        for (int j = 0; j < 4; ++j) {
             scores[i][j] = rand() % 51 + 50;
         }
     }
@@ -116,14 +110,14 @@ int main() {
     cout << "Student\tMath\tEnglish\tScience\tComputer Science" << endl;
     for (int i = 0; i < numStudents; ++i) {
         cout << i + 1 << "\t";
-        for (int j = 0; j < numSubjects; ++j) {
+        for (int j = 0; j < 4; ++j) {
             cout << setw(4) << scores[i][j] << "\t";
         }
         cout << endl;
     }
 
     // Calculate and print the average score for each subject
-    for (int j = 0; j < numSubjects; ++j) {
+    for (int j = 0; j < 4; ++j) {
         int sum = 0;
         for (int i = 0; i < numStudents; ++i) {
             sum += scores[i][j];
